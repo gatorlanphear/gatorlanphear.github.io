@@ -4,14 +4,24 @@
 body {
 	background-color:#F88D04;   /* background color */
 	color: #444;          /* text color for the entire page */
-	font-size: 12px;
+	font-size: 24px;
 	font-family:Tahoma, sans-serif;
 }
 
 h1, h2 { 
 	text-align:center;     /* centers h1 and h2 content */
 }
+div.a {
+  font-size: 30px;
+}
 
+div.b {
+  font-size: large;
+}
+
+div.c {
+  font-size: 200%;
+}
 /* styles for the "wrapper" div, notice that "wrapper" is preceded by "#" */
 #wrapper {
 	width:900px;
@@ -22,7 +32,7 @@ h1, h2 {
 .stepTitle{
 	padding:4px;
 	text-align:left;
-	font-size:16px;
+	font-size:24px;
 	background-color:#949090
  }
 
