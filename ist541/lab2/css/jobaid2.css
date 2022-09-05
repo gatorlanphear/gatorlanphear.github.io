@@ -11,16 +11,11 @@ body {
 h1, h2 { 
 	text-align:center;     /* centers h1 and h2 content */
 }
-div.a {
-  font-size: 30px;
-}
-
-div.b {
-  font-size: large;
-}
-
-div.c {
-  font-size: 200%;
+div.a { font-size: x-large; }
+div.b { font-size: larger; }
+div.c { font-size: 48px; }
+div.d { font-size: 200%; }
+div.e { font-size: 15vw; }
 }
 /* styles for the "wrapper" div, notice that "wrapper" is preceded by "#" */
 #wrapper {
