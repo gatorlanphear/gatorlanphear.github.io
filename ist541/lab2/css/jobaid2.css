@@ -3,7 +3,7 @@
 
 body {
 	background-color:#F88D04;   /* background color */
-	color: #444;          /* text color for the entire page */
+	color: black;          /* text color for the entire page */
 	font-size: 24px;
 	font-family:Tahoma, sans-serif;
 }
@@ -11,7 +11,9 @@ body {
 h1, h2 { 
 	text-align:center;     /* centers h1 and h2 content */
 }
-
+div {
+  padding: 10px;
+}
 }
 /* styles for the "wrapper" div, notice that "wrapper" is preceded by "#" */
 #wrapper {
@@ -24,7 +26,7 @@ h1, h2 {
 	padding:4px;
 	text-align:left;
 	font-size:24px;
-	background-color:#949090
+	background-color:#422201
  }
 
 .stepContent{ 
