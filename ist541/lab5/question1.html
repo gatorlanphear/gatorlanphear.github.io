@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>lab5</title>
+	<link href="css/scarwolf.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+ 
+<h1>What is Scarlett's Favorite Food?</h1>
+ 
+<h3 id="hint">Hint: Hover over the image below to find out!</h3>
+ 
+<img onmouseenter="showAnswer()" id="Scarlett"  src="img/Scarlett_IMG_9056.png" width="25%" height="auto" />
+ 
+<img onmouseleave="hideAnswer()" id="Scarlett_Thumbs" src="img/Scarlett_IMG_9057.png" width="25%" height="auto" />
+ 
+           <div id="answer"></div>  <!-- This is a placeholder to display here the answer-->
+ 
+</div> <!-- closing  “wrapper” -->
+<script>
+ function showAnswer() {
+	   $("#Scarlett").hide();
+	   $("#Scarlett_Thumbs").show();
+	   $("#answer").html("<h2>Scarlett Loves Food!</h2>");
+	}
+
+function hideAnswer() {
+	   $("#Scarlett").show();
+	   $("#Scarlett_Thumbs").hide();
+	   $("#answer").html("");  
+	}
+</script>
+
+</body>
+</html>
