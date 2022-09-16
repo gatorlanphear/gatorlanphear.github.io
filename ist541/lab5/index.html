@@ -39,6 +39,33 @@ body {
   background-color: black;
   color: white;
 }
+	/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 75%;
+  width: auto;
+  padding: 10px;
+  margin-top: -22px;
+  color: teal;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 500px;
+  border-radius: 3px 0 0 3px;
+}
+/* Position the "prev" to the left */
+.prev {
+  left: 500px;
+
+  border-radius: 3px 0 0 3px;
+}
 </style>
 
 	<div class="topnav">
@@ -49,78 +76,55 @@ body {
 </div>
 	<h1>Click one of the above tabs to explore.</h1>
 	<p>Do Not Click the "Do Not Click" Tab!</p>
-<h2> By the Numbers</h2>
+<h2> Images</h2>
 
 	<div class="slideshow-container">
 
 <div class="mySlides slide">
-  <div class="numbertext">1 / 13</div>
-  <img src="img/xHOW.jpg" style="width:60%"><br><br><br><br>
-  <div class="text">HOW</div>
+  <div class="numbertext">1 / 8</div>
+  <img src="img/gatorA.png" style="width:25%"><br><br><br><br>
+  <div class="text">Gator</div>
 </div>
 
 <div class="mySlides slide">
-  <div class="numbertext">2 / 13</div>
-  <img src="img/xWHEN.jpg" style="width:60%"><br><br><br><br>
-  <div class="text">WHEN</div>
+  <div class="numbertext">2 / 8</div>
+  <img src="img/P1073392.JPG" style="width:25%"><br><br><br><br>
+  <div class="text">Kimberly</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">3 / 13</div>
-  <img src="img/xWHERE.jpg" style="width:60%"><br><br><br><br>
-  <div class="text">WHERE</div>
+  <div class="numbertext">3 / 8</div>
+  <img src="img/P1073418.JPG" style="width:25%"><br><br><br><br>
+  <div class="text">Leilani Bee</div>
 </div>
 <div class="mySlides fade">
-  <div class="numbertext">4 / 13</div>
-  <img src="img/xWHO.jpg" style="width:60%"><br><br><br><br>
-  <div class="text">WHO</div>
+  <div class="numbertext">4 / 8</div>
+  <img src="img/P1073248.JPG" style="width:25%"><br><br><br><br>
+  <div class="text">Scarlett</div>
 </div>
 		<div class="mySlides fade">
-  <div class="numbertext">5 / 13</div>
-  <img src="img/vz_A.Autopng.jpg" style="width:60%"><br><br><br><br>
-  <div class="text">Automated speed enformcement</div>
+  <div class="numbertext">5 / 8</div>
+  <img src="img/P1073252.JPG" style="width:25%"><br><br><br><br>
+  <div class="text">Amanda Panda</div>
 </div>
 		<div class="mySlides fade">
-  <div class="numbertext">6 / 13</div>
-  <img src="img/vz_A.framepng.jpg" style="width:60%"><br><br><br><br>
-  <div class="text">Safe Systems Framework</div>
+  <div class="numbertext">6 / 8</div>
+  <img src="img/.JPG" style="width:50%"><br><br><br><br>
+  <div class="text">Dragons</div>
 </div>
 		<div class="mySlides fade">
-  <div class="numbertext">7 / 13</div>
-  <img src="img/vz_A.Issuespng.jpg" style="width:60%"><br><br><br><br>
-  <div class="text">Major Issues</div>
+  <div class="numbertext">7 / 8</div>
+  <img src="img/P1073465.JPG" style="width:50%"><br><br><br><br>
+  <div class="text">Pirate</div>
 </div>
 		<div class="mySlides fade">
-  <div class="numbertext">8 / 13</div>
-  <img src="img/vz_A.Saferpng.jpg" style="width:60%"><br><br><br><br>
-  <div class="text">Safer Street Priority Finder</div>
+  <div class="numbertext">8 / 8</div>
+  <img src="img/P1073289.JPG" style="width:50%"><br><br><br><br>
+  <div class="text">Archer</div>
 </div>
 
-			<div class="mySlides fade">
-  <div class="numbertext">9 / 13</div>
-  <img src="img/vz_page1.jpg" style="width:60%"><br><br><br><br>
-  <div class="text">Vision Zero Action Plan Process</div>
-</div>
-			<div class="mySlides fade">
-  <div class="numbertext">10 / 13</div>
-  <img src="img/vz_page2crahsdata.jpg" style="width:60%"><br><br><br><br>
-  <div class="text">Crash Analysis</div>
-</div>
-		<div class="mySlides fade">
-  <div class="numbertext">11 / 13</div>
-  <img src="img/vz_page6highrish.jpg" style="width:60%"><br><br><br><br>
-  <div class="text">Higher Risk Network</div>
-</div>
-			<div class="mySlides fade">
-  <div class="numbertext">12 / 13</div>
-  <img src="img/vz_page7.jpg" style="width:60%"><br><br><br><br>
-  <div class="text">Weighted Crashes Per Mile</div>
-</div>
-			<div class="mySlides fade">
-  <div class="numbertext">13 / 13</div>
-  <img src="img/vz_page8_higherrisk.jpg" style="width:60%"><br><br><br><br>
-  <div class="text">Safer Street Model</div>
-</div>
+			
+
 
 <a class="prev" onclick="plusSlides(-1)">❮</a>
 <a class="next" onclick="plusSlides(1)">❯</a>
@@ -137,11 +141,7 @@ body {
 	<span class="dot" onclick="currentSlide(6)"></span>
 	<span class="dot" onclick="currentSlide(7)"></span>
 	<span class="dot" onclick="currentSlide(8)"></span>
-	<span class="dot" onclick="currentSlide(9)"></span>
-	<span class="dot" onclick="currentSlide(10)"></span>
-	<span class="dot" onclick="currentSlide(11)"></span>
-	<span class="dot" onclick="currentSlide(12)"></span>
-	<span class="dot" onclick="currentSlide(13)"></span>
+
 </div>
 
 <script>
