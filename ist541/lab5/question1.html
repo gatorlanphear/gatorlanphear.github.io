@@ -9,6 +9,44 @@
 </head>
 
 <body>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: teal;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+</style>
+
+	<div class="topnav">
+  <a  href="index.html">Home</a>
+  <a class="active" href="question1.html">Question 1</a>
+  <a href="question2.html">Question 2</a>
+   <a href="https://hmpg.net/">Do Not Click</a>
+</div>
 
 	<div id="wrapper">
  
@@ -16,9 +54,9 @@
  
 <h3 id="hint">Hint: Hover over the image below to find out!</h3>
  
-<img onmouseenter="showAnswer()" id="Scarlett"  src="img/Scarlett_IMG_9056.png" width="25%" height="auto" />
+<img onmouseenter="showAnswer()" id="Scarlett"  src="img/Scarlett_IMG_9056.png" width="50%" height="auto" />
  
-<img onmouseleave="hideAnswer()" id="Scarlett_Thumbs" src="img/Scarlett_IMG_9057.png" width="25%" height="auto" />
+<img onmouseleave="hideAnswer()" id="Scarlett_Thumbs" src="img/Scarlett_IMG_9057.png" width="50%" height="auto" />
  
            <div id="answer"></div>  <!-- This is a placeholder to display here the answer-->
  
@@ -27,7 +65,7 @@
  function showAnswer() {
 	   $("#Scarlett").hide();
 	   $("#Scarlett_Thumbs").show();
-	   $("#answer").html("<h2>Scarlett Loves Food!</h2>");
+	   $("#answer").html("<h2>Scarlett's Favorite Food is... Food!</h2>");
 	}
 
 function hideAnswer() {

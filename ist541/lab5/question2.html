@@ -8,11 +8,50 @@
 </head>
 
 <body>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: teal;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+</style>
+
+	<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="question1.html">Question 1</a>
+  <a class="active" href="question2.html">Question 2</a>
+  <a href="https://hmpg.net/">Do Not Click</a>
+</div>
+	
 	 <div id="wrapper">
 <h1>What is Leilani's Favorite Ice Cream Flavor?</h1>
 		 <img id="leilani_b" src="img/Leilani_IMG_9011.png" width="25%" height="auto"/>
 <h3>Click on one of the following choices</h3>
-
+Scroll down to see if your answer is correct!<br>
 <h2 onclick="wrongAnswer1()" class="choices"> Chocolate </h2>
 <h2 onclick="wrongAnswer2()" class="choices"> Vanilla </h2>
 <h2 onclick="rightAnswer()" class="choices"> Phish Food </h2>

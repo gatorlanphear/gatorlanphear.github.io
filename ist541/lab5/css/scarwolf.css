@@ -3,6 +3,10 @@ width: 900px;
 margin: 0 auto;
 text-align: center;
 }
+body {
+	text-align: center;
+	background-color: gray;  
+}
 
  #Scarlett {
 border: black 5px solid;
