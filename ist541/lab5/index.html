@@ -10,8 +10,9 @@
 
 <body>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-body {
+	body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -39,32 +40,29 @@ body {
   background-color: black;
   color: white;
 }
-	/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 75%;
-  width: auto;
-  padding: 10px;
-  margin-top: -22px;
-  color: teal;
-  font-weight: bold;
-  font-size: 30px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
 }
 
-/* Position the "next button" to the right */
+a:hover {
+  background-color: teal;
+  color: black;
+}
+
+.previous {
+  background-color: teal;
+  color: black;
+}
+
 .next {
-  right: 500px;
-  border-radius: 3px 0 0 3px;
+  background-color: black;
+  color: white;
 }
-/* Position the "prev" to the left */
-.prev {
-  left: 500px;
 
-  border-radius: 3px 0 0 3px;
+.round {
+  border-radius: 50%;
 }
 </style>
 
@@ -82,44 +80,44 @@ body {
 
 <div class="mySlides slide">
   <div class="numbertext">1 / 8</div>
-  <img src="img/gatorA.png" style="width:25%"><br><br><br><br>
+  <img src="img/gatorA.png" style="width:50%"><br>
   <div class="text">Gator</div>
 </div>
 
 <div class="mySlides slide">
   <div class="numbertext">2 / 8</div>
-  <img src="img/P1073392.JPG" style="width:25%"><br><br><br><br>
+  <img src="img/P1073392.JPG" style="width:25%"><br>
   <div class="text">Kimberly</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 8</div>
-  <img src="img/P1073418.JPG" style="width:25%"><br><br><br><br>
+  <img src="img/P1073418.JPG" style="width:25%"><br>
   <div class="text">Leilani Bee</div>
 </div>
 <div class="mySlides fade">
   <div class="numbertext">4 / 8</div>
-  <img src="img/P1073248.JPG" style="width:25%"><br><br><br><br>
+  <img src="img/P1073248.JPG" style="width:25%"><br>
   <div class="text">Scarlett</div>
 </div>
 		<div class="mySlides fade">
   <div class="numbertext">5 / 8</div>
-  <img src="img/P1073252.JPG" style="width:25%"><br><br><br><br>
+  <img src="img/P1073252.JPG" style="width:25%"><br>
   <div class="text">Amanda Panda</div>
 </div>
 		<div class="mySlides fade">
   <div class="numbertext">6 / 8</div>
-  <img src="img/.JPG" style="width:50%"><br><br><br><br>
+  <img src="img/P1073379.JPG" style="width:50%"><br>
   <div class="text">Dragons</div>
 </div>
 		<div class="mySlides fade">
   <div class="numbertext">7 / 8</div>
-  <img src="img/P1073465.JPG" style="width:50%"><br><br><br><br>
+  <img src="img/P1073465.JPG" style="width:50%"><br>
   <div class="text">Pirate</div>
 </div>
 		<div class="mySlides fade">
   <div class="numbertext">8 / 8</div>
-  <img src="img/P1073289.JPG" style="width:50%"><br><br><br><br>
+  <img src="img/P1073289.JPG" style="width:50%"><br>
   <div class="text">Archer</div>
 </div>
 
@@ -171,6 +169,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+	
    </script>
 </body>
 </html>
